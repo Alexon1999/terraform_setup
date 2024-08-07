@@ -4,7 +4,7 @@ Terraform is an open-source, Infrastructure-as-Code tool that helps you manage y
 
 A common pattern is to use Terraform to set up base infrastructure, including networking, VM instances, and other foundational resources.
 
-Here in this project, we are going to use Terraform to create to provision a full stack project (instances, vpc, public gateway, databases, load balancer, dns). More details about the project can be found in the [Terraform.pdf](./Terraform.pdf) file.
+Here in this project, we are going to use Terraform to create to provision a full stack project on the cloud provider **Scaleway** (instances, vpc, public gateway, databases, load balancer, dns). More details about the project can be found in the [Terraform.pdf](./Terraform.pdf) file.
 
 ## Documentation
 
