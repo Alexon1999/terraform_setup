@@ -1,7 +1,16 @@
 # Terraform on Scaleway
 
-[Documentation](https://registry.terraform.io/providers/scaleway/scaleway/latest/docs)
+Terraform is an open-source, Infrastructure-as-Code tool that helps you manage your infrastructure at any time, deploy it/delete it in just one click, and work with other developers on your projects.
 
+A common pattern is to use Terraform to set up base infrastructure, including networking, VM instances, and other foundational resources.
+
+Here in this project, we are going to use Terraform to create to provision a full stack project (instances, vpc, public gateway, databases, load balancer, dns). More details about the project can be found in the [Terraform.pdf](./Terraform.pdf) file.
+
+## Documentation
+
+- [Scaleway Provider](https://registry.terraform.io/providers/scaleway/scaleway/latest/docs)
+
+## Getting Started
 - Fill `secrets.sh` variables with Scaleway credentials and other prject variables.
   - `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` are the credentials to provide to Terraform to have access to the AWS bucket S3 to store the Terraform state.
   
@@ -17,7 +26,7 @@
 - Build the infrastructure: `terraform apply`
 - Destroy the infrastructure: `terraform destroy`
 
-### Troubleshoot
+## Troubleshoot
 
 - Error: no zone found with the name `{subdomain}.{domain}`
   1) try to Import Existing Zone: If the zone already exists in Scaleway but is not recognized by Terraform, you might need to import the DNS zone into your Terraform state.
